@@ -1,0 +1,43 @@
+{
+  "Country": null,
+  "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
+}

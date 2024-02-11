@@ -1,0 +1,107 @@
+{
+  "Country": "Greece",
+  "Tagline": "A Premier Destination for Digital Nomads",
+  "action_comment": "Remember: Consult a Tax Professional for Personalized Advice!",
+  "country_description": "Discover Greece, not just as a country but as an idyllic lifestyle choice for digital nomads. Renowned as a perfect \"anchor country,\" Greece marries financial incentives with a lifestyle that's both enriching and relaxing, making it a top choice for remote workers from across the globe.",
+  "finanical_benefits_tagline": "Financial Benefits Tailored for Digital Nomads:",
+  "financial_benefits": [
+    {
+      "benefit": "No Taxation on Foreign Income",
+      "description": "Dive into the fiscal paradise where there's no taxation on foreign-sourced income, perfect for those embracing the remote working lifestyle."
+    },
+    {
+      "benefit": "Attractive Tax Reduction for Extended Stays",
+      "description": "Planning a longer sojourn? Stay for two years and relish a 50% tax reduction on Greek-sourced income, significantly enhancing your financial journey in Greece."
+    }
+  ],
+  "key_consideration": "To benefit from no taxation on foreign income, digital nomads should not engage in specific economic activities in Greece, such as purchasing a car, real estate, or partaking in local economic activities. This offers incredible financial freedom for those in Greece primarily for work and leisure without local economic ties. It's essential to consult a tax professional to understand your specific tax situation.",
+  "Currency_symbol": "€",
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 10000,
+      "Standard_rate_percentage": 9
+    },
+    {
+      "Standard_rate_range_min": 10001,
+      "Standard_rate_range_max": 20000,
+      "Standard_rate_percentage": 22
+    },
+    {
+      "Standard_rate_range_min": 20001,
+      "Standard_rate_range_max": 30000,
+      "Standard_rate_percentage": 28
+    },
+    {
+      "Standard_rate_range_min": 30001,
+      "Standard_rate_range_max": 40000,
+      "Standard_rate_percentage": 36
+    },
+    {
+      "Standard_rate_range_min": 40001,
+      "Standard_rate_range_max": null,
+      "Standard_rate_percentage": 44
+    }
+  ],
+  "reduction_rate": 50,
+  "Reduced_rate": [
+    {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 10000,
+      "Reduced_rate_percentage": 4.5
+    },
+    {
+      "Reduced_rate_range_min": 10001,
+      "Reduced_rate_range_max": 20000,
+      "Reduced_rate_percentage": 11
+    },
+    {
+      "Reduced_rate_range_min": 20001,
+      "Reduced_rate_range_max": 30000,
+      "Reduced_rate_percentage": 14
+    },
+    {
+      "Reduced_rate_range_min": 30001,
+      "Reduced_rate_range_max": 40000,
+      "Reduced_rate_percentage": 18
+    },
+    {
+      "Reduced_rate_range_min": 40001,
+      "Reduced_rate_range_max": null,
+      "Reduced_rate_percentage": 22
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": "Sun-Kissed Climate",
+      "description": "Greece's Mediterranean climate promises sunny days, ideal for both productivity and relaxation."
+    },
+    {
+      "point": "Ease of Communication",
+      "description": "With English widely spoken, you'll find it easy to integrate into the local community and conduct your business."
+    },
+    {
+      "point": "Cost-Effective Living",
+      "description": "Enjoy high-quality living at an affordable cost — a boon for budget-conscious nomads."
+    },
+    {
+      "point": "Picturesque Settings",
+      "description": "From ancient ruins to stunning seascapes, Greece offers a work environment like no other."
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": "Cultural Riches",
+      "description": "Dive into Greece's deep-rooted history and vibrant culture."
+    },
+    {
+      "benefit": "Community and Networking",
+      "description": "Join an expanding network of digital nomads and locals for a fulfilling social life."
+    },
+    {
+      "benefit": "Healthcare and Technology",
+      "description": "Benefit from excellent healthcare and reliable internet, essentials for a worry-free nomadic lifestyle."
+    }
+  ],
+  "Conclusion": "Greece emerges as an exceptional choice for digital nomads, offering financial incentives and a lifestyle that's as enriching as it is enjoyable. As you chart your course for this Mediterranean gem, the significance of consulting with a tax professional to navigate Greece's tax system for your unique situation cannot be overstated."
+}
