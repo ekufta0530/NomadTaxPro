@@ -26,7 +26,47 @@
       "days_of_sun": 200,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Georgia",
@@ -142,7 +182,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Estonia",
@@ -171,7 +251,47 @@
       "days_of_sun": 105,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Croatia",
@@ -299,7 +419,47 @@
       "days_of_sun": 350,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Portugal",
@@ -328,7 +488,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Costa Rica",
@@ -355,9 +555,49 @@
       "cost_of_living_single": 1359.00,
       "index_score": 0,
       "days_of_sun": 225,
-      "lifestyle_keywords": "[beach, surfing, yoga]",
+      "lifestyle_keywords": "['beach', 'surfing', 'yoga']",
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Bermuda",
@@ -386,7 +626,47 @@
       "days_of_sun": 225,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Cayman Islands",
@@ -415,7 +695,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Germany",
@@ -444,7 +764,47 @@
       "days_of_sun": 170,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Spain",
@@ -473,7 +833,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Mexico",
@@ -502,7 +902,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Czech Republic",
@@ -531,7 +971,47 @@
       "days_of_sun": 160,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Czech Republic",
@@ -560,7 +1040,47 @@
       "days_of_sun": 160,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Greece",
@@ -722,7 +1242,47 @@
       "days_of_sun": 75,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Norway",
@@ -751,7 +1311,47 @@
       "days_of_sun": 155,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Norway",
@@ -780,7 +1380,47 @@
       "days_of_sun": 155,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Mauritius",
@@ -809,7 +1449,47 @@
       "days_of_sun": 225,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Thailand",
@@ -838,7 +1518,47 @@
       "days_of_sun": 250,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Antigua and Barbuda",
@@ -867,7 +1587,47 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     },
     {
       "country_name": "Anguilla",
@@ -896,6 +1656,46 @@
       "days_of_sun": 300,
       "lifestyle_keywords": [],
       "description": "",
-      "image": ""
+      "image": "",
+      "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+     {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
     }
   ]
