@@ -29,7 +29,7 @@ This is also not designed in figma as of now.
 
 Functionality: Allow users to signup and accept payment. This should be easily integrated or already integrated with a third party provider. Ideally, I can just add an applicaiton key or something to make the connection. 
 
-## Page 2: Country Database. 
+## Page 3: Country Database. 
 
 This is the default page for first time users/ post signup. 
 
@@ -40,7 +40,7 @@ Functionality:
 - Countries can be favorited by a user and updated in the user database.
 - User can remove favorited countries in left side bar component
 
-## Page 2: Country Page. 
+## Page 4: Country Page. 
 
 This one is laid out in figma and basically just shows the user the description of the country and potential tax benefits. 
 
@@ -52,7 +52,7 @@ Functionality:
 * Greece
 * Croatia
 
-## Page 3: Physical Presence Test Tracker
+## Page 5: Physical Presence Test Tracker
 
 This is the post login default page for users with 1+ logins
 
@@ -75,7 +75,7 @@ This is the right sidebar in the Physical Presence Test Tracker page. It it comp
 3. Stays short list: list of stays but with no key considerations. Just dates and country name. 
 
 
-### Page 4: User admin page. 
+### Page 6: User admin page. 
 
 Not currently in Figma page but super basic is fine for now. 
 
