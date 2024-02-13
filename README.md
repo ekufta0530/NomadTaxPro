@@ -11,14 +11,24 @@ Following the formatting below, fill in the countries as much as possinle. I am 
 
 Quick primer on this. It is basicically just fields and values. The field is the first part and the value is the thing trailing the :
 
-Here is an example of an object that descibes me. "name" is the field. The value is "eric".
+Here is an example of 2 objects that descibes us. "name" is the field. The value is "eric". 
 
 ```json
+{
 "name": "eric",
 "age_years" : 33,
 "income_usd_monthly" : 3000,
 "married" : false,
 "cool" : null
+},
+{
+"name": "Matt",
+"age_years" : 35,
+"income_usd_monthly" : 3000,
+"married" : false,
+"cool" : true
+}
+
 ```
 We don't use any counters or symbols like 33 years or $3000 per month. That is just 33 since years is implied by the "age_years" value and same for income using usd & monthly in the value name. 
 
@@ -46,9 +56,11 @@ Remember: things will work even if we have null or 0 values (see note below) but
 
 In this example, there is no family application so the value is left as 0 since it should be an integer.
 ```json
+{
  "application_fee_single_usd": 500,
   "application_fee_couples_usd": 800,
   "application_fee_family_usd": 0,
+}
 ```
 
 ### Example
