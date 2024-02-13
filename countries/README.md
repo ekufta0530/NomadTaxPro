@@ -5,7 +5,7 @@ All changes should be made in the [countries/countries.json](https://github.com/
 * Greece
 * Croatia
 
-Following the formatting below, fill in the countries as much as possinle. I am thinking that the best way to do this for you is just in the github.com webpage. There are some other options as well if you find this to be a hassle.
+Following the formatting below, fill in the countries as much as possible. I am thinking that the best way to do this for you is just in the github.com webpage. There are some other options as well if you find this to be a hassle.
 
 ## What is json?
 
