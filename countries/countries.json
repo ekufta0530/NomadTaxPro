@@ -1,5 +1,72 @@
 [
   {
+    "country_name": "United States of America",
+    "visa_name": null,
+    "official_link": null,
+    "type": null,
+    "validity_months": 0,
+    "renewability": false,
+    "renewability_details": null,
+    "application_fee_single_usd": null,
+    "application_fee_couples_usd": null,
+    "application_fee_family_usd": null,
+    "income_requirement_usd_monthly": 0,
+    "application_timeline_days": 0,
+    "local_tax_on_foreign_income": false,
+    "tax_residency_trigger_days": 0,
+    "tax_residency_trigger_details": null,
+    "special_tax_regime": null,
+    "special_tax_regime_details": null,
+    "leads_to_permanent_residence": null,
+    "permenant_residency_details": null,
+    "dependent_application": null,
+    "application_in_country": null,
+    "cost_of_living_single_usd": 0,
+    "index_score": 0,
+    "days_of_sun": 0,
+    "lifestyle_keywords": null,
+    "image": "",
+    "Tagline": null,
+    "action_comment": null,
+    "finanical_benefits_tagline": null,
+    "financial_benefits": [
+      {
+        "benefit": null,
+        "description": null
+      }
+    ],
+    "key_consideration": "Enjoy your time at home.",
+    "Currency_symbol": null,
+    "Tax_rates": [
+      {
+        "Standard_rate_range_min": 0,
+        "Standard_rate_range_max": 0,
+        "Standard_rate_percentage": 0
+      }
+    ],
+    "reduction_rate": 0,
+    "Reduced_rate": [
+      {
+        "Reduced_rate_range_min": 0,
+        "Reduced_rate_range_max": 0,
+        "Reduced_rate_percentage": 0
+      }
+    ],
+    "lifestyle_points": [
+      {
+        "point": null,
+        "description": null
+      }
+    ],
+    "Additional_benefits": [
+      {
+        "benefit": null,
+        "description": null
+      }
+    ],
+    "Conclusion": null
+  },
+  {
     "country_name": "Croatia",
     "visa_name": "Digital Nomad Visa",
     "official_link": null,
@@ -29,7 +96,6 @@
     "image": "../images/Croatia_1.jpeg",
     "Tagline": "Discover Croatia: A Digital Nomad's Mediterranean Paradise",
     "action_comment": "Set sail for Croatia and your digital nomad future",
-    "country_description": "Set sail on an adventure to Croatia, an emerging \"anchor country\" for digital nomads seeking a blend of fiscal benefits and an idyllic lifestyle. With its strategic location and enticing perks, Croatia is quickly becoming a favored destination for the global remote working community.",
     "finanical_benefits_tagline": "Fiscal Freedom and Flexibility",
     "financial_benefits": [
       {
@@ -127,7 +193,6 @@
     "image": "../images/georgia_1.jpeg",
     "Tagline": "Georgia: A Hidden Gem for Digital Nomads",
     "action_comment": "Embark on Your Greek Odyssey: The Ideal Digital Nomad Destination",
-    "country_description": "Venture into the heart of the Caucasus and discover Georgia, an intriguing option for digital nomads seeking a blend of tradition and modernity. While it may not be the first choice for those prioritizing tax savings, Georgia offers a distinctive experience that combines cultural richness with practical benefits.",
     "finanical_benefits_tagline": "Low Cost of Living and Special Regimes:",
     "financial_benefits": [
       {
@@ -211,10 +276,9 @@
     "days_of_sun": 275,
     "lifestyle_keywords": [],
     "description": null,
-    "image": "",
+    "image": "../images/Greece_1.jpeg",
     "Tagline": "A Premier Destination for Digital Nomads",
     "action_comment": "Remember: Consult a Tax Professional for Personalized Advice!",
-    "country_description": "Discover Greece, not just as a country but as an idyllic lifestyle choice for digital nomads. Renowned as a perfect \"anchor country,\" Greece marries financial incentives with a lifestyle that's both enriching and relaxing, making it a top choice for remote workers from across the globe.",
     "finanical_benefits_tagline": "Financial Benefits Tailored for Digital Nomads:",
     "financial_benefits": [
       {
@@ -347,9 +411,12 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
+      {
+        "benefit": null,
+        "description": null
+      },
       {
         "benefit": null,
         "description": null
@@ -408,7 +475,7 @@
     "permenant_residency_details": null,
     "dependent_application": true,
     "application_in_country": "Online",
-    "cost_of_living_single": "$2,953.00",
+    "cost_of_living_single": 2953.00,
     "index_score": null,
     "days_of_sun": 300,
     "lifestyle_keywords": [],
@@ -416,7 +483,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -485,7 +551,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -554,7 +619,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -623,7 +687,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -692,7 +755,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -761,7 +823,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -830,7 +891,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -899,7 +959,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -968,7 +1027,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1037,7 +1095,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1106,7 +1163,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1175,7 +1231,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1244,7 +1299,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1313,7 +1367,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1382,7 +1435,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1451,7 +1503,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1520,7 +1571,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1589,7 +1639,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {
@@ -1658,7 +1707,6 @@
     "image": null,
     "Tagline": null,
     "action_comment": null,
-    "country_description": null,
     "finanical_benefits_tagline": null,
     "financial_benefits": [
       {

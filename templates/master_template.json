@@ -1,29 +1,68 @@
 {
-    "country_name": "",
-    "visa_name": "",
-    "official_link": "",
-    "type": "",
-    "validity_months": 0,
-    "renewability": false,
-    "renewability_details": "",
-    "application_fee_single_usd": 0,
-    "application_fee_couples_usd": 0,
-    "application_fee_family_usd": 0,
-    "income_requirement_usd_monthly": 0,
-    "application_timeline_days": 0,
-    "local_tax_on_foreign_income": false,
-    "tax_residency_trigger_days": 0,
-    "tax_residency_trigger_details": "",
-    "special_tax_regime": "",
-    "special_tax_regime_details": "",
-    "leads_to_permanent_residence": false,
-    "permenant_residency_details": "",
-    "dependent_application": "",
-    "application_in_country": "",
-    "cost_of_living_single_usd": 0,
-    "index_score": 0,
-    "days_of_sun": 0,
-    "lifestyle_keywords": [],
-    "image": ""
-  }
-  
+  "country_name": "",
+  "visa_name": "",
+  "official_link": "",
+  "type": "",
+  "validity_months": 0,
+  "renewability": false,
+  "renewability_details": "",
+  "application_fee_single_usd": 0,
+  "application_fee_couples_usd": 0,
+  "application_fee_family_usd": 0,
+  "income_requirement_usd_monthly": 0,
+  "application_timeline_days": 0,
+  "local_tax_on_foreign_income": false,
+  "tax_residency_trigger_days": 0,
+  "tax_residency_trigger_details": "",
+  "special_tax_regime": "",
+  "special_tax_regime_details": "",
+  "leads_to_permanent_residence": false,
+  "permenant_residency_details": "",
+  "dependent_application": "",
+  "application_in_country": "",
+  "cost_of_living_single_usd": 0,
+  "index_score": 0,
+  "days_of_sun": 0,
+  "lifestyle_keywords": [],
+  "image": "",
+  "Tagline": null,
+  "action_comment": null,
+  "country_description": null,
+  "finanical_benefits_tagline": null,
+  "financial_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "key_consideration": null,
+  "Currency_symbol": null,
+  "Tax_rates": [
+    {
+      "Standard_rate_range_min": 0,
+      "Standard_rate_range_max": 0,
+      "Standard_rate_percentage": 0
+    }
+  ],
+  "reduction_rate": 0,
+  "Reduced_rate": [
+    {
+      "Reduced_rate_range_min": 0,
+      "Reduced_rate_range_max": 0,
+      "Reduced_rate_percentage": 0
+    }
+  ],
+  "lifestyle_points": [
+    {
+      "point": null,
+      "description": null
+    }
+  ],
+  "Additional_benefits": [
+    {
+      "benefit": null,
+      "description": null
+    }
+  ],
+  "Conclusion": null
+}
