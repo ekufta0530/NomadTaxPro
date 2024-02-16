@@ -1,0 +1,9 @@
+{
+    "fname": "eric",
+    "lname": "kufta",
+    "citizenship": "usa",
+    "green_card": false,
+    "active": "true",
+    "favorites": ["Croatia"],
+    "created_at": "2018-01-01",
+}
