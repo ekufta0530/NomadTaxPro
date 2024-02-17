@@ -1,20 +1,61 @@
-// Import the necessary modules
 const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const underscore = require('underscore');
+const mongoose = require('mongoose');
+const Countries = require('./models/countries');
+const Customers = require('./models/customers');
 
-// Create an instance of express
+
 const app = express();
+
+// Connect to MongoDB
+
+//Fill in Password!!!
+const dbURI = 'mongodb+srv://erickufta:<password>.@cluster0.a3a8ugn.mongodb.net/NomadTaxProMain?retryWrites=true&w=majority'
+mongoose.connect(dbURI)
+  .then((result) => app.listen(3001))
+  .catch((err) => console.log(err));
+
+  mongoose.set('debug', true)
 
 app.set('view engine', 'ejs');
 
-// Use body-parser middleware to handle JSON data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(morgan('dev'));
+app.use(express.static('public'));
 
-// Define a simple GET route
+
+// app.get('/countries', (req, res) => {
+//   // const countries = JSON.parse(fs.readFileSync('./countries/countries.json', 'utf8'));
+//   const countries = Country.find({ display: true });
+//   console.log(countries);
+//   // const display_countries = underscore.where(countries, { 'display' : true })
+//   // res.render('countries', { 'countries' :  display_countries });
+// });
+
 app.get('/countries', (req, res) => {
-  res.render('countries');
+  Countries.find()
+    .then(result => {
+      console.log(result);
+      res.send(result);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+});
+
+app.get('/users', (req, res) => {
+  Customers.find()
+    .then(result => {
+      console.log(result);
+      res.send(result);
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 app.get('/', (req, res) => {
@@ -27,10 +68,4 @@ app.get('/signup', (req, res) => {
 
 app.get('tracker', (req, res) => {
   res.render('tracker');
-});
-
-// Start the server on port 3000
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
 });

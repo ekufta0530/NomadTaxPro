@@ -68,6 +68,7 @@
   },
   {
     "country_name": "Croatia",
+    "display": true,
     "visa_name": "Digital Nomad Visa",
     "official_link": null,
     "type": null,
@@ -93,7 +94,7 @@
     "days_of_sun": 270,
     "lifestyle_keywords": [],
     "description": null,
-    "image": "../images/Croatia_1.jpeg",
+    "image": "../images/croatia_1.jpeg",
     "Tagline": "Discover Croatia: A Digital Nomad's Mediterranean Paradise",
     "action_comment": "Set sail for Croatia and your digital nomad future",
     "finanical_benefits_tagline": "Fiscal Freedom and Flexibility",
@@ -166,6 +167,7 @@
   {
     "country_name": "Georgia",
     "visa_name": "Remote Work Visa",
+    "display": true,
     "official_link": null,
     "type": null,
     "validity_months": 12,
@@ -252,6 +254,7 @@
   {
     "country_name": "Greece",
     "visa_name": "Digital Nomad Visa",
+    "display": true,
     "official_link": null,
     "type": null,
     "validity_months": 12,

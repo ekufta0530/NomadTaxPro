@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.container {
+  border: 1px solid #ccc;
+  padding: 10px; /* Add padding to the inside of the border */
+  margin: 10px; /* Add margin to the outside of the border */
+}
+      </style>      
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-<%- include('nav.ejs') %>
-    <h1>Countries</h1>
+<%- include('partials/nav.ejs') %>
+<h1>Countries</h1>
+    <% for (let country of countries) { %>
+        <div class="container"><%= country.country_name %>
+            <img src="<%= country.image %>">
+        </div>
+    <% } %>
 </body>
 </html>
