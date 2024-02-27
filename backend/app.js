@@ -1,4 +1,3 @@
-const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
@@ -15,7 +14,7 @@ const Customer = require('./models/customers');
 const app = express();
 
 // Connect to MongoDB
-const dbURI = 'mongodb+srv://erickufta:LskwSZrEevOg2QDM@cluster0.a3a8ugn.mongodb.net/NomadTaxProMain?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://erickufta:<password>M@cluster0.a3a8ugn.mongodb.net/NomadTaxProMain?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
@@ -103,3 +102,12 @@ app.get('/tracker', (req, res) => {
     res.redirect('/login');
   }
 });
+
+// passport.use(new LocalStrategy(function verify (username, password, done) {
+//   Customer.findOne({ email: username }, function (err, user) {
+//     if (err) { return done(err); }
+//     if (!user) { return done(null, false); }
+//     if (!bcrypt.compare(password, user.password)) { return done(null, false); }
+//     return done(null, user);
+//   });
+// }
