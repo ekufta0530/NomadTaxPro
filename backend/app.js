@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
 const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
 
 const mongoose = require('mongoose');
 const Countries = require('./models/countries');
@@ -96,5 +97,9 @@ app.post('/login', async (req, res) => {
 });
 
 app.get('/tracker', (req, res) => {
-  res.render('tracker');
+  if (req.isAuthenticated()) {
+    res.render('tracker');
+  } else {
+    res.redirect('/login');
+  }
 });
