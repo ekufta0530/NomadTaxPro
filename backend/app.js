@@ -14,7 +14,6 @@ const LocalStrategy = require('passport-local').Strategy;
 const app = express();
 
 // Connect to MongoDB
-const dbURI = 'mongodb+srv://erickufta:LskwSZrEevOg2QDM@cluster0.a3a8ugn.mongodb.net/NomadTaxProMain?retryWrites=true&w=majority'
 mongoose.connect(process.env.dbURI)
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
