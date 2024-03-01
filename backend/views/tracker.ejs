@@ -4,7 +4,17 @@
     <title>Tracker</title>
 </head>
 <body>
+    <%- include('partials/nav.ejs') %>
     <h1>Tracker</h1>
-    <p>Welcome to the tracker page!</p>
+    <p>Welcome to the tracker page, <%= user %>!!!</p>
+    <ul>
+        <% stays.forEach(function(stay) { %>
+            <li>
+                Country: <%= stay.country_name %><br>
+                Start Date: <%= stay.start_date %><br>
+                End Date: <%= stay.end_date %>
+            </li>
+        <% }); %>
+    </ul>
 </body>
 </html>

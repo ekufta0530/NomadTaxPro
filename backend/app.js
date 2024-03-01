@@ -35,55 +35,52 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.serializeUser(function(user, done) {
+passport.serializeUser(function (user, done) {
   done(null, user.id);
 });
 
 passport.deserializeUser(async (id, done) => {
   try {
-    const user = await Customer.findById(id).exec(); 
-    done(null, user); 
+    const user = await Customer.findById(id).exec();
+    done(null, user);
   } catch (err) {
     done(err);
   }
 });
 
-passport.use(new LocalStrategy(async function(username, password, done) {
-    try {
-        const user = await Customer.findOne({ email: username }).exec();
-        // console.log(user.password);
-        // console.log(user.email);
-        if (!user) {
-            console.log("user does not exist")
-            return done(null, false, { message: 'Incorrect username.' });
-        }
-        
-        const isMatch = await bcrypt.compare(password, user.password);
-        if (!isMatch) {
-            return done(null, false, { message: 'Incorrect password.' });
-        }
-        
-        return done(null, user);
-    } catch (err) {
-        console.log(err)
-        return done(err);
+passport.use(new LocalStrategy(async function (username, password, done) {
+  try {
+    const user = await Customer.findOne({ email: username }).exec();
+    // console.log(user.password);
+    // console.log(user.email);
+    if (!user) {
+      console.log("user does not exist")
+      return done(null, false, { message: 'Incorrect username.' });
     }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return done(null, false, { message: 'Incorrect password.' });
+    }
+
+    return done(null, user);
+  } catch (err) {
+    console.log(err)
+    return done(err);
+  }
 }));
 
 function isAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-    user = req.user;
-    console.log(user)
-    // res.redirect('/tracker', { 'user' : req.user });
   }
-  res.redirect('/login');
+  next();
 }
 
 function isNotAuthenticated(req, res, next) {
   if (!req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/tracker');
+  next();
 }
 
 
@@ -96,15 +93,17 @@ app.post('/login', isNotAuthenticated, passport.authenticate('local', {
 
 
 app.get('/countries', isAuthenticated, (req, res) => {
-  console.log(req.user)
-  Countries.find( { Tagline : {$ne : null}} )
+  if (req.isAuthenticated()) {
+  Countries.find({ Tagline: { $ne: null } })
     .then(result => {
-      console.log(result);
-      res.render('countries', { 'countries' : result } );
+      res.render('countries', { 'countries': result });
     })
     .catch(err => {
       console.log(err);
     });
+  } else {
+    res.redirect('/login');
+  }
 });
 
 app.get('/', (req, res) => {
@@ -113,6 +112,13 @@ app.get('/', (req, res) => {
 
 app.get("/login", (req, res) => {
   res.render("login.ejs");
+});
+
+app.get('/logout', function(req, res, next){
+  req.logout(function(err) {
+    if (err) { return next(err); }
+    res.redirect('/login');
+  });
 });
 
 app.get("/signup", (req, res) => {
@@ -131,9 +137,8 @@ app.post('/signup', async (req, res) => {
   } else {
     const hashedPassword = await bcrypt.hash(password, 10);
     password = hashedPassword;
-    console.log(password);
     const newCustomer = new Customer(
-      { email : email, password : password, fname : fname, lname: lname}
+      { email: email, password: password, fname: fname, lname: lname }
     );
     newCustomer.save()
     res.send("User created");
@@ -142,16 +147,38 @@ app.post('/signup', async (req, res) => {
 
 app.get('/tracker', (req, res) => {
   if (req.isAuthenticated()) {
-    res.render('tracker');
+    Customer.findOne({ email: req.user.email })
+      .populate('stays')
+      .then(result => {
+        res.render('tracker', {
+          stays: result.stays,
+          user: result.fname
+        });
+      });
   } else {
     res.redirect('/login');
   }
 });
 
-app.get('/add-stay', (req, res) => {
-  if (req.isAuthenticated()) {
-    res.render('add-stay');
-  } else {
-    res.redirect('/login');
-  }
+app.get('/add-stay', (req, res) =>
+  res.render('add-stay')
+);
+
+app.post('/add-stay', (req, res) => {
+  const stay = new Stay({
+    country_name: req.body.country_name,
+    start_date: req.body.start_date,
+    end_date: req.body.end_date
+  })
+  stay.save()
+    .then((result) => {
+      Customer.findOneAndUpdate({ email: req.user.email }, { $push: { stays: result._id } })
+        .then((result) => {
+          res.redirect('/tracker');
+        })
+    })
+    .catch(err => {
+      console.log(err);
+    });
+
 });

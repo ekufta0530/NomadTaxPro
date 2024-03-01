@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Stay = require('./stays');
 
 const customerSchema = new Schema({
   email: { type: String, required: true, unique: true },

@@ -15,6 +15,4 @@ const staySchema = new mongoose.Schema({
   }
 });
 
-const Stay = mongoose.model('Stay', staySchema);
-
-module.exports = Stay;
+module.exports = mongoose.model('Stay', staySchema);
