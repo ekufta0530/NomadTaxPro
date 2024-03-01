@@ -10,6 +10,7 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const calculateFEIEDays = require('./calculator/calculator');
 
 const app = express();
 
@@ -83,7 +84,6 @@ function isNotAuthenticated(req, res, next) {
   next();
 }
 
-
 // ROUTES
 
 app.post('/login', isNotAuthenticated, passport.authenticate('local', {
@@ -154,6 +154,9 @@ app.get('/tracker', (req, res) => {
           stays: result.stays,
           user: result.fname
         });
+      })
+      .then(result => {
+        calculateFEIEDays(result.stays, "2024-01-01");
       });
   } else {
     res.redirect('/login');
