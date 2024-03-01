@@ -11,7 +11,8 @@ const customerSchema = new Schema({
   green_card: { type: Boolean, default: false },
   active: { type: Boolean },
   favorites: [{ type: String }],
-  stays: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Stay' }]
+  stays: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Stay' }],
+  periodStartDate: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Customer', customerSchema);
