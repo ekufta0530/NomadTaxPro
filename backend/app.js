@@ -10,7 +10,6 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const calculateFEIEDays = require('./calculator/calculator');
 
 const app = express();
 
@@ -91,7 +90,6 @@ app.post('/login', isNotAuthenticated, passport.authenticate('local', {
   failureRedirect: '/login?error=true'
 }));
 
-
 app.get('/countries', isAuthenticated, (req, res) => {
   if (req.isAuthenticated()) {
   Countries.find({ Tagline: { $ne: null } })
@@ -101,6 +99,28 @@ app.get('/countries', isAuthenticated, (req, res) => {
     .catch(err => {
       console.log(err);
     });
+  } else {
+    res.redirect('/login');
+  }
+});
+
+app.get('/countries/:country', isAuthenticated, (req, res) => {
+  if (req.isAuthenticated()) {
+    Countries.findOne({ country_name : req.params.country })
+      .then(country => {
+        if (country) {
+          // Country found, render the page
+          res.render('country', { 'country': country });
+        } else {
+          // Country not found, send 404 response
+          res.status(404).send('Page not found');
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        // Handle other errors
+        res.status(500).send('Internal Server Error');
+      });
   } else {
     res.redirect('/login');
   }
@@ -152,16 +172,15 @@ app.get('/tracker', (req, res) => {
       .then(result => {
         res.render('tracker', {
           stays: result.stays,
-          user: result.fname
+          user: result.fname,
+          stayAnalysis : calculateFEIEDays(result.stays, "2024-01-01")
         });
       })
-      .then(result => {
-        calculateFEIEDays(result.stays, "2024-01-01");
-      });
   } else {
     res.redirect('/login');
   }
 });
+
 
 app.get('/add-stay', (req, res) =>
   res.render('add-stay')
@@ -185,3 +204,39 @@ app.post('/add-stay', (req, res) => {
     });
 
 });
+
+// Function to calculate the number of days outside the US
+function calculateFEIEDays(stays, periodStartDate) {
+  const periodStart = new Date(periodStartDate);
+  const periodEnd = new Date(periodStart);
+  periodEnd.setDate(periodEnd.getDate() + 329); // Set to 330 days later
+
+  let daysOutsideUS = 0;
+  let trackedDays = new Set();
+
+  stays.forEach(stay => {
+    const start = new Date(stay.start_date);
+    const end = new Date(stay.end_date);
+
+    // Iterate over each day in the stay
+    for (let day = start; day <= end; day.setDate(day.getDate() + 1)) {
+      // Check if the day is within the 330-day period and not in the US
+      if (day >= periodStart && day <= periodEnd && stay.country_name !== "United States") {
+        const dayStr = day.toISOString().split('T')[0]; // Format YYYY-MM-DD
+        // Check if we have already counted this day
+        if (!trackedDays.has(dayStr)) {
+          daysOutsideUS++;
+          trackedDays.add(dayStr);
+        }
+      }
+    }
+  });
+
+  const totalDaysInPeriod = 330;
+  const untrackedDays = totalDaysInPeriod - trackedDays.size;
+
+  return {
+    daysOutsideUS,
+    untrackedDays
+  };
+}

@@ -6,6 +6,11 @@
 <body>
     <%- include('partials/nav.ejs') %>
     <h1>Tracker</h1>
+    <h1>Calculator</h1>
+        <% if (stayAnalysis) { %>
+        <h2>Days Outside US: <%= stayAnalysis.daysOutsideUS %></h2>
+        <h2>Untracked Days: <%= stayAnalysis.untrackedDays %></h2>
+    <% } %>
     <p>Welcome to the tracker page, <%= user %>!!!</p>
     <ul>
         <% stays.forEach(function(stay) { %>
