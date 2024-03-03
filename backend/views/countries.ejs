@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-img {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-}
-.container {
-  border: 1px solid #ccc;
-  padding: 10px; /* Add padding to the inside of the border */
-  margin: 10px; /* Add margin to the outside of the border */
-}
-      </style>      
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Soft font */
+            background-color: #f9f9f9; /* Lighter background */
+            color: #333;
+            padding: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            display: block; /* Changed to block for better alignment */
+            margin: 0 auto; /* Center the image */
+        }
+        
+        .container {
+            border: none; /* Removed border for a softer look */
+            padding: 15px;
+            margin-bottom: 20px; /* Adjusted margin */
+            border-radius: 10px; /* More pronounced rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            background-color: #ffffff; /* White background for container */
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
-<%- include('partials/nav.ejs') %>
-<h1>Countries</h1>
-    <% for (let country of countries) { %>
-        <div class="container"><%= country.country_name %>
-            <img src="<%= country.image %>">
-        </div>
-    <% } %>
+    <%- include('partials/nav.ejs') %>
+    <h1>Countries</h1>
+    <div class="grid-container">
+        <% for (let country of countries) { %>
+            <div class="container">
+                <h2><%= country.country_name %></h2> <!-- Added heading for country name -->
+                <img src="<%= country.image %>" alt="<%= country.country_name %> Flag"> <!-- Alt text for accessibility -->
+            </div>
+        <% } %>
+    </div>
 </body>
 </html>

@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-require('dotenv').config();
 const mongoose = require('mongoose');
 const Countries = require('./models/countries');
 const Customer = require('./models/customers');
@@ -10,6 +9,7 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+require('dotenv').config();
 
 const app = express();
 
@@ -51,8 +51,6 @@ passport.deserializeUser(async (id, done) => {
 passport.use(new LocalStrategy(async function (username, password, done) {
   try {
     const user = await Customer.findOne({ email: username }).exec();
-    // console.log(user.password);
-    // console.log(user.email);
     if (!user) {
       console.log("user does not exist")
       return done(null, false, { message: 'Incorrect username.' });
@@ -130,7 +128,7 @@ app.get('/', (req, res) => {
   res.redirect('/countries');
 });
 
-app.get("/login", (req, res) => {
+app.get("/login", isNotAuthenticated, (req, res) => {
   res.render("login.ejs");
 });
 
@@ -169,6 +167,7 @@ app.get('/tracker', (req, res) => {
   if (req.isAuthenticated()) {
     Customer.findOne({ email: req.user.email })
       .populate('stays')
+      // need to create relationship with countries page so we can populate 'key_considerations' within tracker. 
       .then(result => {
         res.render('tracker', {
           stays: result.stays,
